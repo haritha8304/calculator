@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+            <form>
+                <div class="display">
+                    <input placeholder="0" id="result" class="form-control" type="text" name="display" readonly>
+                </div>
+                <div>
+                    <input onclick="allClear()" type="button" value="AC">
+                    <input onclick="removeLast()" type="button" value="DE">
+                    <input onclick="displays('.')" type="button" value=".">
+                    <input onclick="displays('/')" type="button" value="/">
+                </div>
+                <div>
+                    <input onclick="displays('7')" type="button" value="7">
+                    <input onclick="displays('8')" type="button" value="8">
+                    <input onclick="displays('9')" type="button" value="9">
+                    <input onclick="displays('*')" type="button" value="*">
+                </div>
+                <div>
+                    <input onclick="displays('4')" type="button" value="4">
+                    <input onclick="displays('5')" type="button" value="5">
+                    <input onclick="displays('6')" type="button" value="6">
+                    <input onclick="displays('-')" type="button" value="-">
+                </div>
+                <div>
+                    <input  onclick="displays('1')" type="button" value="1">
+                    <input onclick="displays('2')" type="button" value="2">
+                    <input onclick="displays('3')" type="button" value="3">
+                    <input onclick="displays('+')" type="button" value="+">
+                </div>
+                <div>
+                    <input onclick="displays('00')" type="button" value="00">
+                    <input  onclick="displays('0')" type="button" value="0">
+                    <input onclick="exprEval()" type="button" value="=" class="equal">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="./calc.js">
+
+</script>
+</html>
